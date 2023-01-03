@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Gaji Karyawan</title>
+</head>
+<body>
+    <div class="w3-container w3-round-xlarge" style="background-color: #112942; border: 1px solid grey;">
+        <div class="title">
+        Program Gaji Pegawai</div>
+
+    <form method="POST" action="hasil.php">
+    <div class="inputBox">
+        <input type="text" required="required" name="nama"> <span>Nama Pegawai</span>
+    </div>
+    <div class="inputBox">
+        <h4>Golongan :</h4>
+    <select class="w3-select" name="golongan">
+        <option value="" disabled selected>Pilih Golongan</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+      </select>
+    </div>
+    
+    <div class="inputBox">
+        <h4>Jumlah Anak :</h4>
+            <div class="kanan">
+            <p>
+            <input class="w3-radio" type="radio" name="jumlahanak" value="1" checked>
+            <label>1</label>
+            </p>
+            <p>
+            <input class="w3-radio" type="radio" name="jumlahanak" value="2">
+            <label>2</label>
+            </p>
+            <p>
+            <input class="w3-radio" type="radio" name="jumlahanak" value="3">
+            <label>3</label>
+            </p></div><br>
+    </div><br><br><br><br><br>
+
+    <div class="inputBox">
+        <h4>Tunjangan :</h4>
+            <div class="kanan">
+            <p>
+            <input class="w3-check atur2" type="checkbox" name="makan" value="Makan">
+            <label>Makan</label>
+            </p>
+            <p>
+            <input class="w3-check atur2" type="checkbox" name="transport" value="Transportasi">
+            <label>Transportasi</label>
+            </p>
+            <p>
+            <input class="w3-check atur2" type="checkbox" name="kesehatan" value="Kesehatan">
+            <label>Kesehatan</label>
+        </p></div>
+    </div><br><br><br><br><br><br><br>
+
+    <div class="hasil">
+        <div class="w3-container">
+        <div class="w3-half" >
+        <input type="submit" value="Submit" style="cursor: pointer;">
+        </div>
+        <div class="w3-half">
+            <input type="reset" value="Reset" style="cursor: pointer;">
+        </div>
+        </div>
+    </div><br>
+
+</div></form>
+</body>
+</html>

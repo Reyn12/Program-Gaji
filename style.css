@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+    background: #112942;
+}
+.inputBox {
+    position: relative;
+    width: 250px;
+    margin: 20px;
+}
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0.25);
+    background: #112942;
+    border-radius: 9px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.5s;
+
+}
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.438);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span{
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #112942;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.2em;
+}
+
+.inputBox:nth-child(2) input:valid ~ span,
+.inputBox:nth-child(2) input:focus ~ span {
+    border-radius: 4px;
+    background-color: #00dfc4;
+    color: #112942;
+}
+
+.inputBox input:valid,
+.inputBox input:focus
+{
+    border: 1px solid #00dfc4;
+}
+
+.title {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.w3-select {
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 8px;
+    background-color: #112942;
+    color: rgba(255, 255, 255, 0.438);
+    padding-left: 7px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+label{
+    color: white;
+    position: relative;
+    top: -24px;
+    left: -20px;
+}
+
+h4 {
+    color: white; 
+    margin-left: 10px;
+}
+
+.kanan {
+    float: right;
+}
+
+.atur2 {
+    right: -40px;
+}
+
+.w3-aqua {
+    color: #328ff0;
+}
+
+.hasil {
+    text-align: center;
+}
+.hasil input {
+    border: none;
+    border-radius: 8px;
+    padding: 17px;
+    background-color: #00dfc4;
+}
+.hasil input:hover{
+    background-color: rgb(95, 93, 93);
+    color: white;
+}
